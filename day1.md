@@ -1,5 +1,11 @@
 
+Day 1
+=====
+
 On day one the practical starts with a 2 hour lecture introducing you the theory. Slides will be available from StudentPortal.
+
+Practical
+---------
 
 You will do today:
 1. learn how to edit, validate, and view HTML pages
