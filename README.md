@@ -2,13 +2,4 @@
 
 This is a MOOC around a six day course on using JavaScript to program the life sciences web, but with a focus on the Open PHACTS API.
 
-Schedule
---------
-
-* Day 1: Algorithmics and Programming Theory
-* Day 2: Open PHACTS API
-* Day 3: Visualisation with d3.js
-* Day 4: Answering biological problems
-* Day 5: Debugging
-* Day 6: Presentations
-
+There is [general information](https://egonw.github.io/pils/), but you can also jump in and start at [day 1](https://egonw.github.io/pils/day1.md).
