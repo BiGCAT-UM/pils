@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JSON</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Copyright (c) 2013-2017  Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
+
+     MIT license
+-->
+
+  <!-- ops.js -->
+  <script src="lib/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="lib/purl.js"></script>
+  <script type="text/javascript" src="src/combined.js"></script>
+
+</head>
+
+<body>
+  <h3>OpenPHACTS</h3>
+  <h4>JSON 1</h4>
+  <div class="json" id="json1">Pending...</div>
+
+  <!-- dynamically create a table with type information -->
+  <script type="text/javascript">
+var sources = new CompoundSearch("https://beta.openphacts.org/2.1", "91f5d4d0", "1af5086da757e57c553bfa1351708d5f");
+
+var callback = function(success, status, response){
+  console.log(success)
+  console.log(status)
+  console.log(success || status == 200)
+  if (success && status == 200) {
+    d3.select("#json2").html(JSON.stringify(response, undefined, 2));
+  }
+};
+sources.compoundPharmacologyCount(
+  "http://www.conceptwiki.org/concept/342a03eb-3311-49ac-8d6e-8bf9b605dab1",
+  null, null, null, null, null, null, null, null, null, null, null,
+  null, null, null, null, null, null, callbackCount
+);
+  </script>
+</body>
+</html>
+
