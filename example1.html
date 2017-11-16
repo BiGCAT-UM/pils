@@ -20,7 +20,7 @@
 <body>
   <h3>OpenPHACTS</h3>
   <h4>JSON 1</h4>
-  <div class="json" id="json1">Pending...</div>
+  <div class="json" id="json">Pending...</div>
 
   <!-- dynamically create a table with type information -->
   <script type="text/javascript">
@@ -31,7 +31,7 @@ var callback = function(success, status, response){
   console.log(status)
   console.log(success || status == 200)
   if (success && status == 200) {
-    d3.select("#json").html(JSON.stringify(response, undefined, 2));
+    d3.select("#json").html("<pre>" + JSON.stringify(response, undefined, 2) + "</pre>");
   } else {
     d3.select("#json").html("No success: " + status);
   }

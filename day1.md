@@ -50,4 +50,46 @@ Second, since we are going to visualize data at some point anyway, we need to lo
 
     <script type="text/javascript" src="https://egonw.github.io/pils/lib/d3.v3.min.js"></script>
 
-Then ...
+Then we need to add the code, which we add with a <script> element, but then just after the <div>
+element.
+
+    <script type="text/javascript">
+    </script>
+
+Because we need to define which Open PHACTS server we want to use, and what API identifier
+en secret key gives us access, we first instantiate a client object (inside the <script> element):
+
+    var sources = new CompoundSearch("https://beta.openphacts.org/2.1", "91f5d4d0", "1af5086da757e57c553bfa1351708d5f");
+
+This object does not actually make a search. It just specifies where the search will be made.
+The search is done with one of the methods of this client object:
+
+    sources.compoundPharmacologyCount(
+      "http://www.conceptwiki.org/concept/342a03eb-3311-49ac-8d6e-8bf9b605dab1",
+      null, null, null, null, null, null, null, null, null, null, null,
+      null, null, null, null, null, null, callback
+    );
+
+The method actually has a lot of parameters, all but two set to null. The only two parameters set
+are the first and last parameters. The first parameters, for the .compoundPharmacologyCount method
+is the compound we mentioned earlier. The last method is the callback function (not defined yet).
+This function is called as soon as, but not before(!), the Open PHACTS server returned results. That is,
+that is at some future point in time.
+
+Now, the callback function (which has the function name 'callback' too in this case, but the function
+can have better names), will receive information from the server: the success (true or false), HTTP status
+code, and (if succeeded) a JSON string with the response from the server. The function can then
+process this data, and take the next step. The next step in this case is to report various variable
+values to the browser console and insert content in the HTML document with the d3.select().html()
+methods:
+
+    var callback = function(success, status, response){
+      console.log(success)
+      console.log(status)
+      if (success && status == 200) {
+        d3.select("#json").html("<pre>" + JSON.stringify(response, undefined, 2) + "</pre>");
+      } else {
+        d3.select("#json").html("No success: " + status);
+      }
+    };
+
