@@ -93,3 +93,4 @@ methods:
       }
     };
 
+The see the full source code, open [example1.html in your browser as source code](https://raw.githubusercontent.com/egonw/pils/master/example1.html).
