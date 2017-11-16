@@ -32,6 +32,8 @@ var callback = function(success, status, response){
   console.log(success || status == 200)
   if (success && status == 200) {
     d3.select("#json2").html(JSON.stringify(response, undefined, 2));
+  } else {
+    d3.select("#json2").html("No success: " + status);
   }
 };
 sources.compoundPharmacologyCount(
