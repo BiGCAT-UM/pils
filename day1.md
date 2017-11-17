@@ -3,11 +3,18 @@ Day 1
 =====
 
 On day one the practical starts with a 2 hour lecture introducing you the theory. Slides will be available from StudentPortal.
+This lecture covers the core language of algorithmics and programming.
+
+Theory
+------
+
+
 
 Practical
 ---------
 
 You will do today:
+1. [get an Open PHACTS API account](getaccount.md)
 1. learn how to edit, validate, and view HTML pages
 1. using a number of examples
 1. learn how use JavaScript in HTML pages and run these in your browser
