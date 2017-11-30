@@ -40,5 +40,8 @@ for aGene in genes:
       compounds = returnCompoundsForProtein(aProtein)
 ````
 
-Notice the nesting.
+Notice the nesting. And, mind the synchronous nature of this code! When dealing with asynchronous webservices,
+a call like returnGenesForDisease(someDisease) will fire the search, but JavaScript will not wait for the answer,
+and the next lines (the first fore loop) will start immediately, when no data is available yet.
 
+Therefore, JavaScript solves this by introducing callback functions.
