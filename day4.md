@@ -129,4 +129,62 @@ Because we now have one place in our code when we have one gene IRI, that's the 
 initiate the next call. So, we update the handle method to not create a list, but to call the
 next method: get the pathways in which each gene is found.
 
-TO CONTINUE
+We update the handleAssociations method to call the pathway web service for each gene:
+
+```JavaScript
+var handleAssociations = function(success, status, jsonData) {
+   d3.select("#json").html("<pre>" + JSON.stringify(jsonData, undefined, 2) + "</pre>");
+
+   var itemCount = jsonData.items.length;
+   for (var i = 0; i < itemCount; i++) {
+      item = jsonData.items[i]
+      if (item.gene) {
+        pathwayService.byTarget(item.gene, null, handlePathways);
+      }
+   }
+};
+```
+
+Here, the pathwayService is similar to that of the diseaseService:
+
+```JavaScript
+var pathwayService = new PathwaySearch(
+  "https://beta.openphacts.org/2.1", appID, appKey
+);
+```
+
+That leaves us with defining a second callback function. Here, it just creates a list of pathways:
+
+```JavaScript
+var handlePathways = function(success, status, pathwayData){
+  if (success && status == 200) {
+    var itemCount = pathwayData.items.length;
+    for (var i = 0; i < itemCount; i++) {
+      item = pathwayData.items[i]
+      if (item.page && item.hasPart) {
+        if (item.hasPart._about) {
+          var node = document.createElement("li");
+          var textnode = document.createTextNode(item.hasPart._about + " ➜ " + item.page);
+          node.appendChild(textnode);
+          document.getElementById("list").appendChild(node);
+        } else if (item.hasPart[0]) {
+          var node = document.createElement("li");
+          var textnode = document.createTextNode(item.hasPart[0]._about + " ➜ " + item.page);
+          node.appendChild(textnode);
+          document.getElementById("list").appendChild(node);
+        }
+      }
+    }
+  }
+};
+```
+
+Note that the resulting JSON lists which target (part) is given in the pathway. However, sometimes this is
+a single part is given and the hasPart field is a map. But if there are multiple parts, the hasPart field
+is a list of maps. That explains the additional if-else part.
+
+A second important note is that not every gene has a matching pathway. Therefore, we need to process results
+only when result have been found (HTTP code 200). If no results are found, this is reported too with a
+HTTP code (the famous code 404).
+
+The full code is available as [example 3](example3.html).
