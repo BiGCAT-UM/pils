@@ -49,7 +49,7 @@ after it initiated the web service call, and then just continue with the next li
 is used to handle the data when it had arrived. Think of it that you leave a message with the webservice and
 that at some later point the webservice calls you back.
 
-So, as used in [example 1](example1.md), we have this basic structure, for a single (unnested) call:
+So, as used in [example 1](example1.html), we have this basic structure, for a single (unnested) call:
 
 ```JavaScript
 var compoundService = new CompoundSearch(
@@ -123,7 +123,7 @@ var handleAssociations = function(success, status, response) {
 }
 ```
 
-All this method does now is create a list of gene IRIs. The full code is available as [example 2](example2.md).
+All this method does now is create a list of gene IRIs. The full code is available as [example 2](example2.html).
 
 Because we now have one place in our code when we have one gene IRI, that's the place where to
 initiate the next call. So, we update the handle method to not create a list, but to call the
