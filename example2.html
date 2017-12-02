@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Atrial Fibrillation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<!-- Copyright (c) 2017  Egon Willighagen <egon.willighagen@maastrichtuniversity.nl>
+
+     MIT license
+-->
+
+  <!-- ops.js -->
+  <script type="text/javascript" src="https://egonw.github.io/pils/lib/purl.js"></script>
+  <script type="text/javascript" src="https://egonw.github.io/pils/lib/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="https://egonw.github.io/pils/lib/d3.v3.min.js"></script>
+  <script type="text/javascript" src="https://egonw.github.io/pils/src/combined.js"></script>
+
+</head>
+
+<body>
+  <h3>About Atrial Fibrillation</h3>
+  <h4>Gene list</h4>
+  <ul id="list"></ul>
+  <h4>JSON</h4>
+  <div id="json">Pending...</div>
+
+  <!-- dynamically create a table with type information -->
+  <script type="text/javascript">
+var diseaseService = new DiseaseSearch(
+  "https://beta.openphacts.org/2.1", "91f5d4d0", "1af5086da757e57c553bfa1351708d5f"
+);
+
+var handleAssociations = function(success, status, jsonData) {
+   d3.select("#json").html("<pre>" + JSON.stringify(jsonData, undefined, 2) + "</pre>");
+
+   var itemCount = jsonData.items.length;
+   for (var i = 0; i < itemCount; i++) {
+      item = jsonData.items[i]
+      if (item.gene) {
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(item.gene._about);
+        node.appendChild(textnode);
+        document.getElementById("list").appendChild(node);
+      }
+   }
+};
+
+diseaseService.associationsByDisease(
+  'http://linkedlifedata.com/resource/umls/id/C0004238', null, "all", null, null,
+  handleAssociations
+);
+  </script>
+</body>
+</html>
+

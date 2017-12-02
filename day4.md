@@ -87,6 +87,46 @@ Nested web service calls
 So, returning to the pseudocode, we note that we can only iterate over the genes linked to a disease
 when we received a list of genes from the webservice. Therefore, the first iteration in the
 pseudocode has to happen in the callback function for the web service call to return all genes
-for a disease:
+for a disease (mind you, the services does not necessarily only return genes, but generally
+associations):
 
-TO DO...
+```JavaScript
+var diseaseService = new DiseaseSearch(
+  "https://beta.openphacts.org/2.1", appID, appKey
+);
+
+var handleAssociations = function(success, status, response) {
+  // where we will process the genes
+};
+
+diseaseService.associationsByDisease(
+  'http://linkedlifedata.com/resource/umls/id/C0004238', null, null, null, null,
+  handleAssociations
+);
+```
+
+This code does not actually do recursion yet, but let's see how that works. First, we need to iterate
+over all genes, so we update the handleAssociations method:
+
+```JavaScript
+var handleAssociations = function(success, status, response) {
+   var itemCount = jsonData.items.length;
+   for (var i = 0; i < itemCount; i++) {
+      item = jsonData.items[i]
+      if (item.gene) {
+        var node = document.createElement("li");
+        var textnode = document.createTextNode(item.gene._about);
+        node.appendChild(textnode);
+        document.getElementById("list").appendChild(node);
+      }
+   }
+}
+```
+
+All this method does now is create a list of gene IRIs. The full code is available as [example 2](example2.md).
+
+Because we now have one place in our code when we have one gene IRI, that's the place where to
+initiate the next call. So, we update the handle method to not create a list, but to call the
+next method: get the pathways in which each gene is found.
+
+TO CONTINUE
