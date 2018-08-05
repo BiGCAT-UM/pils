@@ -1,6 +1,6 @@
 # Programming In the Life Sciences
 
-This is a MOOC around a six day course on using JavaScript to program the life sciences web, but with a focus on the Open PHACTS API.
+This is a OER around a six day course on using JavaScript to program the life sciences web, but with a focus on the Open PHACTS API.
 
 Description
 -----------
