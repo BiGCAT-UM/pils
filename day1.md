@@ -14,14 +14,16 @@ Practical
 ---------
 
 You will do today:
-1. Learn how to edit, validate, and view HTML pages
-1. Create a Github Account
-1. Learn how use JavaScript in HTML pages and run these in your browser
+1. Learn how to edit [https://www.codecademy.com/learn/learn-html], validate [https://validator.w3.org/], and view HTML pages
 1. Learn how to use the browser console
+1. Create a Github Account
 1. Determine the gaps in your knowledge and skills
 1. [get an Open PHACTS API account](getaccount.md)
 1. Go through some of the examples on the Wikidata SPARQL Endpoint [http://sparql.wikipathways.org/]
 1. form teams of 2/3 people and discuss a scientific question
+
+Additional topics which can be covered:
+1. Learn how use JavaScript in HTML pages and run these in your browser
 
 Examples
 --------
