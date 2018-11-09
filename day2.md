@@ -6,7 +6,7 @@ Practical
 
 You will do today:
 
-1. learn about the Open PHACTS API
+1. learn about the Open PHACTS API (use for example the Explorer [http://www.openphacts.org/explorer]).
 2. learn about ops.js
 3. match Open PHACTS API methods to the scientific question
 4. match Wikidata content to the scientific question
