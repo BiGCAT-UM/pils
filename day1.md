@@ -14,12 +14,12 @@ Practical
 ---------
 
 You will do today:
-1. Learn how to edit [https://www.codecademy.com/learn/learn-html], validate [https://validator.w3.org/], and view HTML pages
+1. Learn how to edit (see [this course](https://www.codecademy.com/learn/learn-html)), validate ([W3 validator](https://validator.w3.org/)), and view HTML pages
 1. Learn how to use the browser console
-1. Create a Github Account
+1. Create a GitHub Account
 1. Determine the gaps in your knowledge and skills
 1. [get an Open PHACTS API account](getaccount.md)
-1. Go through some of the examples on the Wikidata SPARQL Endpoint [http://sparql.wikipathways.org/]
+1. Go through some of the examples on the [Wikidata SPARQL Endpoint](http://sparql.wikipathways.org/)
 1. form teams of 2/3 people and discuss a scientific question
 
 Additional topics which can be covered:
@@ -93,7 +93,7 @@ sources.compoundPharmacologyCount(
 ```
 
 The method actually has a lot of parameters, all but two set to null. The only two parameters set
-are the first and last parameters. The first parameters, for the .compoundPharmacologyCount method
+are the first and last parameters. The first parameters, for the `.compoundPharmacologyCount` method
 is the compound we mentioned earlier. The last method is the callback function (not defined yet).
 This function is called as soon as, but not before(!), the Open PHACTS server returned results. That is,
 that is at some future point in time.
