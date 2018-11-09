@@ -40,6 +40,6 @@ Literature
 
 * “Rang and Dale’s Pharmacology” by Rang et al. (Pearson, 7th edition, 2012).
 * “JavaScript & jQuery: The Missing Manual” by D.S. McFarland (O'Reilly, 2nd edition, 2011)
-* Codecademy's Learn HTML: https://www.codecademy.com/learn/learn-html
-* Codecademy's Introduction to JavaScript: https://www.codecademy.com/learn/introduction-to-javascript
-* "Programming in the Life Sciences blog posts" by Willighagen: http://chem-bla-ics.blogspot.com/search/label/%23pils
+* Codecademy's Learn HTML: [https://www.codecademy.com/learn/learn-html](https://www.codecademy.com/learn/learn-html)
+* Codecademy's Introduction to JavaScript: [https://www.codecademy.com/learn/introduction-to-javascript](https://www.codecademy.com/learn/introduction-to-javascript)
+* "Programming in the Life Sciences blog posts" by Willighagen: [http://chem-bla-ics.blogspot.com/search/label/%23pils](http://chem-bla-ics.blogspot.com/search/label/%23pils)
