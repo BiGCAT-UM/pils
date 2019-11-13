@@ -1,0 +1,25 @@
+<html>
+<head>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+</head>
+
+<body>
+<div id="foo" />
+<script>
+url = "http://sparql.wikipathways.org/"
+query = `
+  SELECT ?pathway WHERE { ?pathway a wp:Pathway }
+`
+var queryUrl = encodeURI( url+"?query="+query+"&format=json" );
+  $.ajax({
+    dataType: "jsonp",  
+    url: queryUrl,
+    success: function( _data ) {
+      console.log(
+        JSON.stringify(_data, undefined, 2)
+      )
+    }
+ });
+</script>
+</body>
+</html>
