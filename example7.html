@@ -1,0 +1,27 @@
+<html>
+<head>
+  <!-- Initialize a global WBK function -->
+  <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikibase-sdk.min.js"></script>
+  <!-- Initialize a global wdk object using the WBK object -->
+  <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikidata-sdk.min.js"></script>
+</head>
+
+<body>
+<div id="foo" />
+<script>
+url = "http://sparql.wikipathways.org/"
+query = `
+  SELECT ?pathway WHERE { ?pathway a wp:Pathway }
+`
+var queryUrl = encodeURI( url+"?query="+query+"&format=json" );
+fetch( queryUrl )
+  .then( response => response.json() )
+  .then( wdk.simplify.sparqlResults )
+  .then( function (response) {
+      console.log(
+        JSON.stringify(response, undefined, 2)
+      )
+    }
+  )
+</script>
+</html>
