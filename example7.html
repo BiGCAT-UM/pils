@@ -13,8 +13,8 @@ url = "http://sparql.wikipathways.org/"
 query = `
   SELECT ?pathway WHERE { ?pathway a wp:Pathway }
 `
-var queryUrl = encodeURI( url+"?query="+query+"&format=json" );
-fetch( queryUrl )
+var queryUrl = encodeURI( url+"?query="+query );
+fetch( queryUrl, {headers: {"Accept": 'application/json'}} )
   .then( response => response.json() )
   .then( wdk.simplify.sparqlResults )
   .then( function (response) {
