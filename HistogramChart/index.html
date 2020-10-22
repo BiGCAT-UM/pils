@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Import D3 visulaization library -->
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+	</head>
+	
+	<body>		
+		<div id="chart">
+		</div>
+		
+		<script>
+
+			dataset = [ {disease: "obesity", count: 10},
+						{disease: "rheumatoid arthritis", count: 20},
+						{disease: "smallpox", count: 30},
+						{disease: "schizophrenia", count: 40},
+						{disease: "asthma", count: 50},
+						{disease: "periodontitis", count: 60},
+						{disease: "colorectal cancer", count: 70},
+						{disease: "Crohn's disease", count: 80},
+						{disease: "breast cancer", count: 90},
+						{disease: "type-2 diabetes", count: 100}];
+
+			data = dataset.map(function(item) { return {"name": item.disease, "value": item.count} } )
+			
+			var height = 700;
+			var width = 1800;
+			
+			var svg = d3.select("body").append("svg")
+						  .attr("viewBox", [0, 0, width, height]);
+			  
+			margin = ({top: 20, right: 0, bottom: 30, left: 40});
+				
+			xAxis = g => g
+						.attr("transform", `translate(0,${height - margin.bottom})`)
+						.style("text-anchor", "middle", "rotate(-90)")
+						.call(d3.axisBottom(x).tickSizeOuter(0));
+			
+			yAxis = g => g
+						.attr("transform", `translate(${margin.left},0)`)
+						.call(d3.axisLeft(y))
+						.call(g => g.select(".domain").remove());
+				  
+			x = d3.scaleBand()
+						.domain(data.map(d => d.name))
+						.range([margin.left, width - margin.right])
+						.padding(0.1);
+			
+			y = d3.scaleLinear()
+						.domain([0, d3.max(data, d => d.value)]).nice()
+						.range([height - margin.bottom, margin.top]);
+
+			svg.append("g")
+				.attr("fill", "steelblue")
+				.selectAll("rect")
+				.data(data)
+				.enter().append("rect")
+					.attr("x", d => x(d.name))
+					.attr("y", d => y(d.value))
+					.attr("height", d => y(0) - y(d.value))
+					.attr("width", x.bandwidth());
+			
+			svg.append("g")	
+			  .call(xAxis);
+
+			svg.append("g")
+			  .call(yAxis);
+
+		</script>
+
+	</body>
+</html>

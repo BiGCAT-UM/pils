@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<!-- Import D3 visulaization library -->
+		<script src="https://d3js.org/d3.v4.min.js"></script>
+
+	</head>
+	
+	<body>		
+		<div id="chart">
+		</div>
+		
+		<script>
+
+			data = [ {diseaseLabel: "rheumatoid arthritis", geneLabel: "CDK6", drugLabel: "palbociclib"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "GRM5", drugLabel: "fenobam"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "GRM5", drugLabel: "dipraglurant"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "TYK2", drugLabel: "ruxolitinib"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "CDK5RAP2", drugLabel: "Helicase [SARS-CoV-2]"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "SYNGR1", drugLabel: "Hypothetical protein CT_556"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "SYNGR1", drugLabel: "Hypothetical protein CTL0819"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "PRKCH", drugLabel: "balanol"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "PDE3A", drugLabel: "inamrinone"},
+					 {diseaseLabel: "rheumatoid arthritis", geneLabel: "PDE3A", drugLabel: "cilostamide"}];
+						
+			tree = d3.nest()
+				.key(function(d) { return d.geneLabel; })
+				.key(function(d) { return d.drugLabel; })
+				.entries(data);
+			
+			// Create tree. 
+			packableTree = {key: data[0].diseaseLabel, values: tree};
+
+			root = d3.hierarchy(packableTree, d => d.values).sum(() => 1)
+
+			var depthScale = d3.scaleOrdinal()
+				.range(["#5EAFC6", "#FE9922", "#93c464", "#75739F"])
+
+			var dimension = 900;
+		
+			var treeChart = d3.tree();
+			treeChart.size([dimension,dimension])
+
+			treeData = treeChart(root).descendants()
+
+			// Create main SVG canvas and initialize a group element for each node in the tree.
+			d3.select("#chart").append("svg")
+					.attr('width', dimension)
+					.attr('height', dimension)
+					.attr('transform', 'translate(0,0)')
+					.append("g")
+					.attr("id", "treeG")
+					.attr("transform", "translate(10,5)")
+					.selectAll("g")
+					.data(treeData)
+					.enter()
+					.append("g")
+					.attr("class", d => d.depth < 2  ? "vnode" : "lnode")
+					.attr("transform", d => `translate(${d.y},${d.x})`)
+
+			// Create a circle element for each node in the tree with a color based on the depth.
+			d3.selectAll("g[class*='node']")
+					.append("circle")
+					.attr("r", 10)
+					.style("fill", d => depthScale(d.depth))
+					.style("stroke", "white")
+					.style("stroke-width", "2px");
+
+			// Add text to the nodes of depth less than 2.
+			d3.selectAll("g.vnode")
+					.append("text")
+					.text(d => d.data.key)
+					.attr("transform", d => `translate(-5,-10)`)
+
+			// Add text to the nodes of depth 2.
+			d3.selectAll("g.lnode")
+					.append("text")
+					.text(d => d.data.key)
+					.attr("transform", d => `translate(10,0)`)
+					
+			// Draw the lines between the nodes.
+			d3.select("#treeG").selectAll("line")
+					.data(treeData.filter(function(d) { if( d.depth < 3) return d.parent }))
+					.enter().insert("line","g.vnode")
+					.attr("x1", d => d.parent.y)
+					.attr("y1", d => d.parent.x)
+					.attr("x2", d => d.y)
+					.attr("y2", d => d.x)
+					.style("stroke", "black")
+
+		</script>
+
+	</body>
+</html>
