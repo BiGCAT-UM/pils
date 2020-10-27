@@ -4,8 +4,13 @@ This is an [OER](https://egonw.github.io/pils/) around a six day course on using
 
 There is [general information](index.md), but you can also jump in and start at [day 1](day1.md).
 
-Description
------------
+## Teachers 2020
+
+* Egon Willighagen
+* Rianne Fijten
+* Ammar Ammar
+
+## Description
 
 In the life sciences the physical interactions between chemical entities, like genes, RNA, proteins, metabolites, and drugs, is of key interest. Not only do these interactions play an important role in the regulation of gene expression, inhibition of proteins, and they basically define all cellular processes. For example, pharmacology is the science studies the action of drugs on protein, and metabolism, similarly, depends on the interactions of small molecule substrates with enzymes.
 
