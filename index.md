@@ -15,7 +15,7 @@ Schedule
 * Day 1: [Theory and HTML+JavaScript exercises](day1.md)
 * Day 2: [Choosing a biological research question and exploring the Open PHACTS API](day2.md)
 * Day 3: [Write down flows: data flow and programmatic (web service call) flow](day3.md)
-* Day 4: [Implement application](day4.md)
+* Day 4: [Final decision of visualisation type](day4.md)
 * Day 5: [Implement application](day5.md)
 * Day 6: [End presentations and individual assessment](day6.md)
 
@@ -42,4 +42,5 @@ Literature
 * “JavaScript & jQuery: The Missing Manual” by D.S. McFarland (O'Reilly, 2nd edition, 2011)
 * Codecademy's Learn HTML: [https://www.codecademy.com/learn/learn-html](https://www.codecademy.com/learn/learn-html)
 * Codecademy's Introduction to JavaScript: [https://www.codecademy.com/learn/introduction-to-javascript](https://www.codecademy.com/learn/introduction-to-javascript)
+* [https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/Task_1.md](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/Task_1.md)
 * "Programming in the Life Sciences blog posts" by Willighagen: [http://chem-bla-ics.blogspot.com/search/label/%23pils](http://chem-bla-ics.blogspot.com/search/label/%23pils)
