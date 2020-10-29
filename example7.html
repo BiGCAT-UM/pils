@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>HTML Fetch example</title>
   <!-- Initialize a global WBK function -->
   <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikibase-sdk.min.js"></script>
   <!-- Initialize a global wdk object using the WBK object -->
@@ -7,9 +9,9 @@
 </head>
 
 <body>
-<div id="foo" />
+<pre id="output"></pre>
 <script>
-url = "http://sparql.wikipathways.org/"
+url = "http://sparql.wikipathways.org/sparql/"
 query = `
   SELECT ?pathway WHERE { ?pathway a wp:Pathway }
 `
@@ -18,10 +20,9 @@ fetch( queryUrl, {headers: {"Accept": 'application/json'}} )
   .then( response => response.json() )
   .then( wdk.simplify.sparqlResults )
   .then( function (response) {
-      console.log(
-        JSON.stringify(response, undefined, 2)
-      )
-    }
-  )
+    document.getElementById('output').innerHTML =
+      JSON.stringify(response, undefined, 2)
+  }
+)
 </script>
 </html>

@@ -1,12 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>WikiPathways example</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
 
 <body>
-<div id="foo" />
+<pre id="output"></pre>
 <script>
-url = "http://sparql.wikipathways.org/"
+url = "http://sparql.wikipathways.org/sparql/"
 query = `
   SELECT ?pathway WHERE { ?pathway a wp:Pathway }
 `
@@ -15,9 +17,8 @@ var queryUrl = encodeURI( url+"?query="+query+"&format=json" );
     dataType: "jsonp",  
     url: queryUrl,
     success: function( _data ) {
-      console.log(
+      document.getElementById('output').innerHTML =
         JSON.stringify(_data, undefined, 2)
-      )
     }
  });
 </script>

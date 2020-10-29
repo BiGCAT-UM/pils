@@ -1,5 +1,7 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>WDK Simplify Example</title>
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <!-- Initialize a global WBK function -->
   <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikibase-sdk.min.js"></script>
@@ -8,9 +10,9 @@
 </head>
 
 <body>
-<div id="foo" />
+<pre id="output"></pre>
 <script>
-url = "http://sparql.wikipathways.org/"
+url = "http://sparql.wikipathways.org/sparql/"
 query = `
   SELECT ?pathway WHERE { ?pathway a wp:Pathway }
 `
@@ -20,9 +22,8 @@ var queryUrl = encodeURI( url+"?query="+query+"&format=json" );
     url: queryUrl,
     success: function( _data ) {
       _data = wdk.simplify.sparqlResults(_data)
-      console.log(
+      document.getElementById('output').innerHTML =
         JSON.stringify(_data, undefined, 2)
-      )
     }
  });
 </script>

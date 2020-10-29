@@ -11,7 +11,7 @@
 <body>
   <pre id="output"></pre>
   <script>
-    query = "SELECT ?compound ?cas WHERE { ?compound wdt:P231 ?cas }"
+    query = "SELECT ?compound ?cas WHERE { ?compound wdt:P231 ?cas } LIMIT 5000"
     fetch(
       wdk.sparqlQuery(query)
     ).then( response => response.json()
