@@ -6,9 +6,9 @@ There is [general information](index.md), but you can also jump in and start at 
 
 ## Teachers 2020
 
-* Egon Willighagen
-* Rianne Fijten
-* Ammar Ammar
+* Dr Egon Willighagen ([@egonw](https://github.com/egonw))
+* Dr Rianne Fijten ([@riannefijten](https://github.com/riannefijten))
+* Ammar Ammar ([@ammar257ammar](https://github.com/ammar257ammar))
 
 ## Description
 
