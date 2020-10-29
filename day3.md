@@ -15,6 +15,6 @@ Today, you will:
 1. [Histogram Chart](HistogramChart/index.html)
 1. [Line Chart](LineChart/index.html)
 1. [Pie Chart](PieChart/index.html)
-1. [Tree Chart](TreeChart/index.html]
+1. [Tree Chart](TreeChart/index.html)
 
 (see them [live with the links on this page](https://egonw.github.io/pils/day3.html))
