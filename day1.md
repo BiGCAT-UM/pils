@@ -26,8 +26,10 @@ Example
 -------
 
 ```html
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
+  <title>Example</title>
   <!-- Initialize a global WBK function -->
   <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikibase-sdk.min.js"></script>
   <!-- Initialize a global wdk object using the WBK object -->
@@ -49,4 +51,5 @@ Example
     main()
   </script>
 </body>
+</html>
 ```
