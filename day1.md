@@ -12,6 +12,7 @@ Practical
 
 You will do today:
 1. Create a GitHub Account. See [this book](https://jwiegley.github.io/git-from-the-bottom-up/) for a brief explanation on the advantages of using Git
+1. Browse projects from previous years. See [the posts on this website](https://chem-bla-ics.blogspot.com/search/label/%23pils).
 1. Determine the gaps in your knowledge and skills
 1. Go through some of the examples on the [Wikidata SPARQL Endpoint](https://query.wikidata.org/)
 1. Form teams of 2/3 people and discuss a scientific question
