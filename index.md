@@ -41,6 +41,8 @@ Literature
 * “Rang and Dale’s Pharmacology” by Rang et al. (Pearson, 7th edition, 2012).
 * “JavaScript & jQuery: The Missing Manual” by D.S. McFarland (O'Reilly, 2nd edition, 2011)
 * Codecademy's Learn HTML: [https://www.codecademy.com/learn/learn-html](https://www.codecademy.com/learn/learn-html)
-* Codecademy's Introduction to JavaScript: [https://www.codecademy.com/learn/introduction-to-javascript](https://www.codecademy.com/learn/introduction-to-javascript)
-* [https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/Task_1.md](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/Task_1.md)
+* [Codecademy's Introduction to JavaScript](https://www.codecademy.com/learn/introduction-to-javascript)
+* [OpenScienceMOOC's How to set up a repository on GitHub](https://github.com/OpenScienceMOOC/Module-5-Open-Research-Software-and-Open-Source/blob/master/content_development/Task_1.md)
 * "Programming in the Life Sciences blog posts" by Willighagen: [http://chem-bla-ics.blogspot.com/search/label/%23pils](http://chem-bla-ics.blogspot.com/search/label/%23pils)
+* [Wikidata Query Service Tutorial](https://wdqs-tutorial.toolforge.org/)
+* [SPARQLing Biology: a beginners course](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/) by Slenter (2019).
