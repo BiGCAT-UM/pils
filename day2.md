@@ -10,7 +10,7 @@ Today, you should work on:
 
 ## Using the Wikidata JavaScript code for other SPARQL endpoints
 
-Wikidata is one of many SPARQL end points. An actively maintained list can be found at [YummyData]().
+Wikidata is one of many SPARQL end points. An actively maintained list can be found at [YummyData](https://yummydata.org/endpoint).
 
 But the same JavaScript library can be used as for the Wikidata. The code then looks like this:
 
