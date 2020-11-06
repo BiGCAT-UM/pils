@@ -18,7 +18,7 @@ But the same JavaScript library can be used as for the Wikidata. The code then l
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Example 4</title>
+  <title>WikiPathways Example</title>
   <!-- Initialize a global WBK function -->
   <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikibase-sdk.min.js"></script>
   <script>
