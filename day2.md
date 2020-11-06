@@ -21,6 +21,8 @@ But the same JavaScript library can be used as for the Wikidata. The code then l
   <title>WikiPathways Example</title>
   <!-- Initialize a global WBK function -->
   <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikibase-sdk.min.js"></script>
+  <!-- Initialize a global wdk object using the WBK object -->
+  <script src="https://cdn.rawgit.com/maxlath/wikidata-sdk/dist/dist/wikidata-sdk.min.js"></script>
   <script>
     const wbk = new WBK({
       instance: 'http://sparql.wikipathways.org/',
