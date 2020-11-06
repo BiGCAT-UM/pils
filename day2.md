@@ -26,7 +26,6 @@ But the same JavaScript library can be used as for the Wikidata. The code then l
       instance: 'http://sparql.wikipathways.org/',
       sparqlEndpoint: 'http://sparql.wikipathways.org/sparql'
     });
-    console.log(wbk)
   </script>
 </head>
 
