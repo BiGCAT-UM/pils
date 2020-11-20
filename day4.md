@@ -18,6 +18,12 @@ one or more people (with an GitHub account). The GitHub accounts of the teachers
 provides general information on how to create an issue. It also discusses templates, but your repository
 will only have that when your group created them.
 
+## Assigning issues
+
+Before you can assign an issue to someone, this person must have accepted your invitation to this person
+to join your repository (this is to prevent spamming people). This support page explains [how to invite
+people](https://help.github.jp/enterprise/2.11/user/articles/inviting-collaborators-to-a-personal-repository/).
+
 Make sure to "assign" the issue to all teachers. This is done in the issue on the right side, by making
 the person you want to reply to the issue an "assignee":
 
