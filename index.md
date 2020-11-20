@@ -46,3 +46,10 @@ Literature
 * "Programming in the Life Sciences blog posts" by Willighagen: [http://chem-bla-ics.blogspot.com/search/label/%23pils](http://chem-bla-ics.blogspot.com/search/label/%23pils)
 * [Wikidata Query Service Tutorial](https://wdqs-tutorial.toolforge.org/)
 * [SPARQLing Biology: a beginners course](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/) by Slenter (2019).
+* List M, Ebert P, Albrecht F. Ten Simple Rules for Developing Usable Software in Computational Biology. Markel S, editor. PLOS Computational Biology. 2017 Jan 5;13(1):e1005265. 
+* Perez-Riverol Y, Gatto L, Wang R, Sachsenberg T, Uszkoreit J, Leprevost F da V, et al. Ten Simple Rules for Taking Advantage of Git and GitHub. Markel S, editor. PLOS Computational Biolo
+gy. 2016 Jul 14;12(7):e1004947. 
+* Prlić A, Procter JB. Ten Simple Rules for the Open Development of Scientific Software. PLoS Computational Biology. 2012 Dec 6;8(12):e1002802.
+* Sandve GK, Nekrutenko A, Taylor J, Hovig E. Ten Simple Rules for Reproducible Computational Research. Bourne PE, editor. PLoS Computational Biology. 2013 Oct 24;9(10):e1003285. 
+* Wiegley, John. Git from the Bottum Up. 2018. [https://jwiegley.github.io/git-from-the-bottom-up/](https://jwiegley.github.io/git-from-the-bottom-up/)
+
