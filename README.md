@@ -4,11 +4,12 @@ This is an [OER](https://egonw.github.io/pils/) around a six day course on using
 
 There is [general information](index.md), but you can also jump in and start at [day 1](day1.md).
 
-## Teachers 2020
+## Teachers 2021
 
 * Dr Egon Willighagen ([@egonw](https://github.com/egonw))
 * Dr Rianne Fijten ([@riannefijten](https://github.com/riannefijten))
 * Ammar Ammar ([@ammar257ammar](https://github.com/ammar257ammar))
+* Matthijs Sloep
 
 ## Description
 
