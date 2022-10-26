@@ -11,3 +11,11 @@ The teachers this year are:
 * Ammar Ammar ([@ammar257ammar](https://github.com/ammar257ammar))
 * Matthijs Sloep ([@matthijssloep](https://github.com/matthijssloep))
 
+## Files included in this repository
+- AUTHORS: this shows the people that contributed to this GitHub repository and this course in general
+- CONTRIBUTING: Here we invite you to make any changes you think are useful
+- CourseDescription: This file contains a description of the course, the objectives and some general literature that could be useful.
+- CourseResources: Here, we have created an overview of the topics you need knowledge of and have included tutorials on each of these topics. Use these to your advantage.
+- finalProduct: This file contains the requirements you need to take into consideration when creating your final product.
+- Glossary: here, most of the relevant terms are explained.
+- LICENSE: the license for reuse and redistribution of this repository and its contents is described here.  
