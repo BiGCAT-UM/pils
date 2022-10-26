@@ -28,27 +28,28 @@ Here are a few resources that will allow you to understand RDF:
 ## SPARQL
 In order to access RDF data, you need to use the query language SPARQL. Here are some resources for SPARQL in general. In the next section, you will be able to use SPARQL in one of the data sources recommended for this project. 
 - [SPARQL in 11 minutes](https://www.youtube.com/watch?v=FvGndkpa4K0) (video)
-- [introduction to SPARQL](https://www.dataversity.net/introduction-to-sparql/)
+- [Introduction to SPARQL](https://www.dataversity.net/introduction-to-sparql/)
+- [SPARQLing Biology: a beginners course](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
 
-## WikiData
-Open data resources on the internet will need to be the main resource for data and information in this course. [WikiData](https://www.wikidata.org/wiki/Wikidata:Main_Page) is one of these and houses tons of information about biology and medicine as well. 
+## Wikidata
+Open data resources on the internet will need to be the main resource for data and information in this course. [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) is one of these and houses tons of information about biology and medicine as well. 
 
 
-*We therefore focus on and recommend WikiData as your primary data source, but you are free to choose another open data source if you wish to.*
+*We therefore focus on and recommend Wikidata as your primary data source, but you are free to choose another open data source if you wish to.*
 
-For those unfamiliar with WikiData, there are several resources available to learn more:
+For those unfamiliar with Wikidata, there are several resources available to learn more:
 - [Wikidata:Introduction](https://www.wikidata.org/wiki/Wikidata:Introduction)
-- Example WikiData entry: [Douglas Adams](https://www.wikidata.org/wiki/Q42)
-- Extensive tutorial on [WikiData basics](https://www.youtube.com/watch?v=tHHwNJ9NYrk) (video; also includes wikidata query service, which we will discuss next)
+- Example Wikidata entry: [Douglas Adams](https://www.wikidata.org/wiki/Q42)
+- Extensive tutorial on [Wikidata basics](https://www.youtube.com/watch?v=tHHwNJ9NYrk) (video; also includes wikidata query service, which we will discuss next)
 
-## WikiData SPARQL query service
-In order to extract data from WikiData (or other RDF resources), we need to use SPARQL through a query service. The WikiData query service can be found [here](https://query.wikidata.org/). This website basically allows you to write a query in SPARQL and retrieve the data you need.
-In order to become familiar with SPARQL and WikiData, we recommend that you check the following tutorials/resources:
-- [WikiData query helper](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
+## Wikidata SPARQL query service
+In order to extract data from Wikidata (or other RDF resources), we need to use SPARQL through a query service. The Wikidata query service can be found [here](https://query.wikidata.org/). This website basically allows you to write a query in SPARQL and retrieve the data you need.
+In order to become familiar with SPARQL and Wikidata, we recommend that you check the following tutorials/resources:
+- [Wikidata query helper](https://www.wikidata.org/wiki/Wikidata:SPARQL_query_service/Wikidata_Query_Help)
 - [Wikidata SPARQL tutorial](https://www.wikidata.org/wiki/Wikidata:SPARQL_tutorial)
-- [Intro to querying with WikiData](https://librarycarpentry.org/lc-wikidata/05-intro_to_querying/index.html)
-- [How to use the WikiData query service](https://www.youtube.com/watch?v=TXdjxnjCvng) (video)
-- [WikiData SPARQL Query tutorial](https://www.youtube.com/watch?v=TXdjxnjCvng) (video)
+- [Intro to querying with Wikidata](https://librarycarpentry.org/lc-wikidata/05-intro_to_querying/index.html)
+- [How to use the Wikidata query service](https://www.youtube.com/watch?v=TXdjxnjCvng) (video)
+- [Wikidata SPARQL Query tutorial](https://www.youtube.com/watch?v=TXdjxnjCvng) (video)
 
 ## JavaScript
 Visualizing the output of your WikiData (or other) query is crucial in this course. This visualization will be done with JavaScript. For these visualizations, you will need a basic knowledge of JavaScript. Here are some tutorials to help you get started.
