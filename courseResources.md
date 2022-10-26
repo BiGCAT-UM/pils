@@ -25,7 +25,7 @@ Here are a few resources that will allow you to understand RDF:
 - [Learn RDF](https://cambridgesemantics.com/blog/semantic-university/learn-rdf/)
 - [RDF Tutorial](https://www.youtube.com/watch?v=zeYfT1cNKQg) (video)
 
-## SPARQL and the WikiData query service
+## SPARQL
 In order to access RDF data, you need to use the query language SPARQL. Here are some resources for SPARQL in general. In the next section, you will be able to use SPARQL in one of the data sources recommended for this project. 
 - [SPARQL in 11 minutes](https://www.youtube.com/watch?v=FvGndkpa4K0) (video)
 - [introduction to SPARQL](https://www.dataversity.net/introduction-to-sparql/)
@@ -49,4 +49,24 @@ In order to become familiar with SPARQL and WikiData, we recommend that you chec
 - [Intro to querying with WikiData](https://librarycarpentry.org/lc-wikidata/05-intro_to_querying/index.html)
 - [How to use the WikiData query service](https://www.youtube.com/watch?v=TXdjxnjCvng) (video)
 - [WikiData SPARQL Query tutorial](https://www.youtube.com/watch?v=TXdjxnjCvng) (video)
+
+## JavaScript
+Visualizing the output of your WikiData (or other) query is crucial in this course. This visualization will be done with JavaScript. For these visualizations, you will need a basic knowledge of JavaScript. Here are some tutorials to help you get started.
+- [JavaScript tutorial](https://www.w3schools.com/js/)
+- [Learn JavaScript in one hour](https://www.youtube.com/watch?v=W6NZfCO5SIk) (video)
+
+## D3.js
+In this course we will not ask you to create a visualization in JavaScript from scratch. Instead, we recommend that you use [D3.js](https://d3js.org/). This is a library that allows you to use data, like the one you gather through SPARQL query services, and then visualize that data. The [D3.js website](https://d3js.org/) offers a lot of documentation to help you create visualizations that suit your needs. It also provides you with a large collection of [ready-to-use visualization examples](https://observablehq.com/@d3/gallery). Use these to your advantage.
+
+Here are some additional examples of D3.js:
+- [An introduction to d3.js in 10 basic examples](https://d3-graph-gallery.com/intro_d3js.html)
+- [Over 1000 D3.js Examples and Demos](http://techslides.com/over-1000-d3-js-examples-and-demos)
+- [The Big List of
+D3.js Examples](https://christopheviau.com/d3list/)
+
+## HTML
+And finally, the visualization needs to be placed inside a webpage, which will be the endproduct you will create during this course. This end-product will most likely use HTML. Here are a few resources to help you get started with HTML. 
+- [HTML Tutorial](https://www.w3schools.com/html/)
+- [HTML tutorial](https://www.javatpoint.com/html-tutorial)
+- [Learn HTML in 1 hour](https://www.youtube.com/watch?v=qz0aGYrrlhU)
 
