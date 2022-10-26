@@ -15,10 +15,7 @@ With the increasing amount of knowledge and data in the life sciences, automatio
 - To be familiar with modern software development practices.
 - To have the ability to visualize data retrieved from webservices
 
-
-
-
-Literature
+## Literature
 - “JavaScript & jQuery: The Missing Manual” by D.S. McFarland (O'Reilly, 2nd edition, 2011)
 - “Wikidata as a knowledge graph for the life sciences” by A. Waagmeester et al. eLife, 2020, https://doi.org/10.7554/eLife.52614
 - “WikiPathways: a multifaceted pathway database bridging metabolomics to other omics research” by D. Slenter et al. NAR, 2018, https://doi.org/10.1093/NAR/GKX1064
