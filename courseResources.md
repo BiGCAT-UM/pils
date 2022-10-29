@@ -34,13 +34,13 @@ In order to access RDF data, you need to use the query language SPARQL. Here are
 ## Wikidata
 Open data resources on the internet will need to be the main resource for data and information in this course. [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) is one of these and houses tons of information about biology and medicine as well. 
 
-
 *We therefore focus on and recommend Wikidata as your primary data source, but you are free to choose another open data source if you wish to.*
 
 For those unfamiliar with Wikidata, there are several resources available to learn more:
 - [Wikidata:Introduction](https://www.wikidata.org/wiki/Wikidata:Introduction)
 - Example Wikidata entry: [Douglas Adams](https://www.wikidata.org/wiki/Q42)
 - Extensive tutorial on [Wikidata basics](https://www.youtube.com/watch?v=tHHwNJ9NYrk) (video; also includes wikidata query service, which we will discuss next)
+- [History of Wikidata](https://threadreaderapp.com/thread/1586266909355388929.html)
 
 ## Wikidata SPARQL query service
 In order to extract data from Wikidata (or other RDF resources), we need to use SPARQL through a query service. The Wikidata query service can be found [here](https://query.wikidata.org/). This website basically allows you to write a query in SPARQL and retrieve the data you need.
