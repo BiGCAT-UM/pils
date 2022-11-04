@@ -3,6 +3,8 @@
 This is an [OER](https://github.com/BiGCAT-UM/pils) around a six day course on using JavaScript to program the life sciences web, with a focus on the life sciences content in [Wikidata](wikidata.org) and its API.
 
 The general description of the course can be found [here](courseDescription.md).
+In order to start working, go to [the tutorial page](courseResources.md)
+
 
 ## Teachers 2022
 The teachers this year are:
