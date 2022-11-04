@@ -2,7 +2,7 @@
 In order to effectively work during this course, you need to take the following steps:
 
 ## Form groups
-If you haven't already done so, fill in [the Wooclap quiz](https://app.wooclap.com/GSYKEX?from=event-page) to let us know what your skill levels are at. We will then assign you to a groups of **max. 3 people** based on your level of knowledge in programming and (bio)medicine.
+If you haven't already done so, fill in [the Google form](https://docs.google.com/forms/d/e/1FAIpQLSconOUHc9AJZ01dAmzZuPTFWc_6qMzNGfTz6FWEovjrgukETg/viewform?usp=sf_link) to let us know what your skill levels are at. We will then assign you to a groups of **max. 3 people** based on your level of knowledge in programming and (bio)medicine.
 
 ## Create an account on GitHub
 The first step is to create a GitHub account for yourself. You will need this to share your code and final product later on.
