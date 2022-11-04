@@ -70,4 +70,5 @@ And finally, the visualization needs to be placed inside a webpage, which will b
 - [HTML Tutorial](https://www.w3schools.com/html/)
 - [HTML tutorial](https://www.javatpoint.com/html-tutorial)
 - [Learn HTML in 1 hour](https://www.youtube.com/watch?v=qz0aGYrrlhU)
+- [HTML syntax validation](https://validator.w3.org/)
 
