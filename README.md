@@ -6,7 +6,7 @@ The general description of the course can be found [here](courseDescription.md).
 In order to start working, go to [the tutorial page](courseResources.md)
 
 
-## Teachers 2022
+## Teachers 2023
 The teachers this year are:
 * Dr Rianne Fijten ([@riannefijten](https://github.com/riannefijten))
 * Dr Egon Willighagen ([@egonw](https://github.com/egonw))
