@@ -30,6 +30,7 @@ In order to access RDF data, you need to use the query language SPARQL. Here are
 - [SPARQL in 11 minutes](https://www.youtube.com/watch?v=FvGndkpa4K0) (video)
 - [Introduction to SPARQL](https://www.dataversity.net/introduction-to-sparql/)
 - [SPARQLing Biology: a beginners course](https://bigcat-um.github.io/SPARQLTutorialBioSB2019/)
+- [Using SPARQL to query Life Science Databases](https://bigcat-um.github.io/PRA3006-SPARQL/)
 
 ## Wikidata
 Open data resources on the internet will need to be the main resource for data and information in this course. [Wikidata](https://www.wikidata.org/wiki/Wikidata:Main_Page) is one of these and houses tons of information about biology and medicine as well. 
