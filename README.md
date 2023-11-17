@@ -11,7 +11,7 @@ The teachers this year are:
 * Dr Rianne Fijten ([@riannefijten](https://github.com/riannefijten))
 * Dr Egon Willighagen ([@egonw](https://github.com/egonw))
 * Ammar Ammar ([@ammar257ammar](https://github.com/ammar257ammar))
-* Ozan Cinar  ([@ozancinar](https://github.com/ozancinar))
+* Dr Ozan Cinar  ([@ozancinar](https://github.com/ozancinar))
 
 ## Files included in this repository
 - AUTHORS: this shows the people that contributed to this GitHub repository and this course in general
